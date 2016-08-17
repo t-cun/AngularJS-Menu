@@ -32,7 +32,7 @@ var gulp = require('gulp'),
   });
 
   gulp.task('usemin',['jshint'], function () {
-    return gulp.src('./app/contactus.html')
+    return gulp.src('./app/dishdetail.html')
         .pipe(usemin({
           css:[minifycss(),rev()],
           js: [ngannotate(),uglify(),rev()]
@@ -76,7 +76,7 @@ var gulp = require('gulp'),
   browserSync.init(files, {
     server: {
       baseDir: "dist",
-      index: "contactus.html"
+      index: "dishdetail.html"
     }
   });
 
