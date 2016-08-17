@@ -64,4 +64,32 @@ angular.module('confusionApp',[])
           $scope.toggleDetails = function() {
             $scope.showDetails = !$scope.showDetails;
           };
-        }]);
+        }])
+
+        .controller('ContactController', ['$scope', function($scope) {
+
+          $scope.feedback = { mychannel:"", firstName:"",
+                              lastName:"", agree:false, email:""};
+
+          var channels = [{value:"tel", label:"Tel."},
+                          {value:"Email",label:"Email"}];
+
+          $scope.channels = channels;
+          $scope.invalidChannelSelection = false;
+
+        }])
+
+        .controller('FeedbackController', ['$scope', function($scope) {
+          $scope.sendFeedback = function() {
+            if ($scope.feedback.agree && ($scope.feedback.mychannel === "")&& !$scope.feedback.mychannel) {
+              $scope.invalidChannelSelection = true;
+            } else {
+                    // Submission action
+                    $scope.invalidChannelSelection = false;
+                    $scope.feedback = {mychannel:"", firstName:"", lastName:"", agree:false, email:"" };
+                    $scope.feedback.mychannel="";
+                    $scope.feedbackForm.$setPristine();                    
+            }
+          };
+        }])
+;
