@@ -67,11 +67,11 @@
               <div class="form-group">
                 <label for="rating" class="col-sm-2 control-label">Number of Stars</label>
                 <div class="radio col-sm-10">
-                  <label><input type="radio" name="optradio" value=1 ng-model="comment.rating">1</label>
-                  <label><input type="radio" name="optradio" value=2 ng-model="comment.rating">2</label>
-                  <label><input type="radio" name="optradio" value=3 ng-model="comment.rating">3</label>
-                  <label><input type="radio" name="optradio" value=4 ng-model="comment.rating">4</label>
-                  <label><input type="radio" name="optradio" value=5 ng-model="comment.rating">5</label>
+                  <label><input type="radio" ng-value=1 ng-model="comment.rating">1</label>
+                  <label><input type="radio" ng-value=2 ng-model="comment.rating">2</label>
+                  <label><input type="radio" ng-value=3 ng-model="comment.rating">3</label>
+                  <label><input type="radio" ng-value=4 ng-model="comment.rating">4</label>
+                  <label><input type="radio" ng-value=5 ng-model="comment.rating">5</label>
                 </div>
               </div>
               <div class="form-group" ng-class="{ 'has-error' : commentForm.content.$error.required && !commentForm.content.$pristine }">
@@ -92,7 +92,7 @@
       </div>
     </div>
 
-    <script src="scripts/main-5e1695920b.js"></script>
+    <script src="scripts/main-86b8b83e44.js"></script>
 
   </body>
 
