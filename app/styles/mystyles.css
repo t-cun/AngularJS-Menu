@@ -8,6 +8,11 @@
   border-bottom: 1px ridge;
   min-height: 400px;
 }
+
+.no-min-height {
+  min-height: 0px;
+}
+
 .row-footer {
   margin: 0px auto;
   padding: 20px 0px;

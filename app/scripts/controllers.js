@@ -58,8 +58,9 @@ angular.module('confusionApp')
           };
         }])
 
-        .controller('dishDetailController', ['$scope', 'menuFactory', function($scope, menuFactory) {
-          $scope.dish = menuFactory.getDish(3);
+        .controller('DishDetailController', ['$scope', '$stateParams', 'menuFactory', function($scope, $stateParams, menuFactory) {
+          var dish = menuFactory.getDish(parseInt($stateParams.id, 10));
+          $scope.dish = dish;
         }])
 
         .controller('CommentController', ['$scope', function($scope) {
@@ -74,5 +75,16 @@ angular.module('confusionApp')
               $scope.addComment($scope.comment);
               $scope.comment = { rating:5, comment:"", author:"", date: new Date()};
               $scope.commentForm.$setPristine();
-            };
-        }]);
+          };
+        }])
+
+        .controller('IndexController', ['$scope', 'menuFactory', 'corporateFactory', function($scope, menuFactory, corporateFactory) {
+          $scope.promoDish = menuFactory.getDish(0);
+          $scope.promo = menuFactory.getPromotion(0);
+          $scope.promoLeader = corporateFactory.getLeader(3);
+        }])
+
+        .controller('AboutController', ['$scope', 'corporateFactory', function($scope, corporateFactory) {
+          $scope.leaders = corporateFactory.getLeaders();
+        }])
+;
