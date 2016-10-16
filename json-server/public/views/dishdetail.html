@@ -21,8 +21,8 @@
   </div>
   <div class="col-xs-9 col-xs-offset-1">
     <h3>Customer Comments</h3>
-    <p>Sort by: <input type="text" ng-model="filtText"></p>
-      <blockquote ng-repeat="comment in dish.comments | orderBy:filtText">
+    <p>Sort by: <input type="text" ng-model="orderText"></p>
+      <blockquote ng-repeat="comment in dish.comments | orderBy:orderText">
         <p>{{comment.rating}} Stars</p>
         <p>{{comment.comment}}</p>
         <footer>{{comment.author}}, {{comment.date | date}}</footer>
