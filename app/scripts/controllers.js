@@ -3,7 +3,7 @@
 angular.module('confusionApp')
 .controller('MenuController', ['$scope', 'menuFactory', function($scope, menuFactory) {
   $scope.tab = 1;
-  $scope.filtText = '';
+  $scope.orderText = '';
   $scope.showDetails = false;
   $scope.showMenu = false;
   $scope.message = "Loading...";
@@ -21,13 +21,13 @@ angular.module('confusionApp')
     $scope.tab = setTab;
 
     if(setTab === 2) {
-      $scope.filtText = "appetizer";
+      $scope.orderText = "appetizer";
     } else if (setTab === 3) {
-      $scope.filtText = "mains";
+      $scope.orderText = "mains";
     } else if (setTab === 4) {
-      $scope.filtText = "dessert";
+      $scope.orderText = "dessert";
     } else {
-      $scope.filtText = "";
+      $scope.orderText = "";
     }
   };
 
