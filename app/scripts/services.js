@@ -1,20 +1,20 @@
 'use strict';
 
 angular.module('confusionApp')
-.constant("baseURL", "http://localhost:3000/")
+.constant("baseURL", "https://coursera-angular-js.firebaseio.com/")
 .service('menuFactory', ['$resource', 'baseURL', function($resource, baseURL) {
 
   this.getDishes = function() {
-    return $resource(baseURL+"dishes/:id", null, {'update':{method:'PUT'}});
+    return $resource(baseURL+"dishes/:id" + ".json", null, {'update':{method:'PUT'}});
   };
 
   this.getPromotion = function() {
-    return $resource(baseURL+"promotions/:id", null, {'update':{method:'PUT'}});
+    return $resource(baseURL+"promotions/:id" + ".json", null, {'update':{method:'PUT'}});
   };
 }])
 
 .factory('corporateFactory', ['$resource', 'baseURL', function($resource, baseURL) {
-  var leadership = $resource(baseURL+"leadership/:id", null, {'update':{method:'PUT'}});
+  var leadership = $resource(baseURL+"leadership/:id" + ".json", null, {'update':{method:'PUT'}});
 
   return {
     getLeaders: function() {
@@ -24,7 +24,7 @@ angular.module('confusionApp')
 }])
 
 .factory('feedbackFactory', ['$resource', 'baseURL', function($resource, baseURL) {
-  var feedback = $resource(baseURL+"feedback/:id", null, {'add':{method:'POST'}});
+  var feedback = $resource(baseURL+"feedback/:id" + ".json", null, {'add':{method:'POST'}});
 
   return {
     putFeedback: function() {
