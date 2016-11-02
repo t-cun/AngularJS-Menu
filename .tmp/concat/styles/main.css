@@ -139,7 +139,7 @@
   top: 0;
 }
 .navbar-inverse {
-  background: #303f9f;
+  background: #ffb900;
   color: #ffffff;
 }
 .navbar-inverse .navbar-nav > .active > a {
@@ -167,14 +167,14 @@
   color: #ffffff;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-  background-color: #303f9f;
+  background-color: #ffb900;
   color: #eeeeee;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
   color: #000000;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu {
-  background-color: #303f9f;
+  background-color: #ffb900;
   color: #eeeeee;
 }
 address {
