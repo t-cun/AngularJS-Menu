@@ -28,5 +28,10 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angularfire": "^2.1.0",
+    "firebase": "^3.6.0"
   }
 }
