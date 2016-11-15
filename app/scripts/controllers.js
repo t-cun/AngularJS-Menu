@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('confusionApp')
-.controller('MenuController', ['$scope', 'menuFactory', function($scope, menuFactory) {
+.controller('MenuController', ['$scope', 'menuFactory', 'imgURL', 'imgTail', function($scope, menuFactory, imgURL, imgTail) {
+  $scope.imgURL = imgURL;
+  $scope.imgTail = imgTail;
   $scope.tab = 1;
   $scope.orderText = '';
   $scope.showDetails = false;
@@ -66,7 +68,9 @@ angular.module('confusionApp')
   };
 }])
 
-.controller('DishDetailController', ['$scope', '$stateParams', 'menuFactory', function($scope, $stateParams, menuFactory) {
+.controller('DishDetailController', ['$scope', '$stateParams', 'menuFactory', 'imgURL', 'imgTail', function($scope, $stateParams, menuFactory, imgURL, imgTail) {
+  $scope.imgURL = imgURL;
+  $scope.imgTail = imgTail;
   $scope.showDish = false;
   $scope.message="Loading...";
   $scope.dish = menuFactory.getDishes().get({id:parseInt($stateParams.id, 10)})
@@ -97,7 +101,9 @@ angular.module('confusionApp')
   };
 }])
 
-.controller('IndexController', ['$scope', 'menuFactory', 'corporateFactory', function($scope, menuFactory, corporateFactory) {
+.controller('IndexController', ['$scope', 'menuFactory', 'corporateFactory', 'imgURL', 'imgTail', function($scope, menuFactory, corporateFactory, imgURL, imgTail) {
+  $scope.imgURL = imgURL;
+  $scope.imgTail = imgTail;
   $scope.showDish = false;
   $scope.showPromo = false;
   $scope.showLeader = false;
@@ -136,7 +142,9 @@ angular.module('confusionApp')
     );
 }])
 
-.controller('AboutController', ['$scope', 'corporateFactory', function($scope, corporateFactory) {
+.controller('AboutController', ['$scope', 'corporateFactory', 'imgURL', 'imgTail', function($scope, corporateFactory, imgURL, imgTail) {
+  $scope.imgURL = imgURL;
+  $scope.imgTail = imgTail;
   $scope.showLeaders = false;
   corporateFactory.getLeaders().query(
     function(response) {

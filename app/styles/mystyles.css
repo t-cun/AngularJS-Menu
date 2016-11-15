@@ -25,6 +25,11 @@
   background: #fff8db;
   color: #f95428;
 }
+
+.media-object.img-thumbnail {
+    max-width: 105px;
+}
+
 .carousel {
   background: #1a237e;
 }

@@ -12,7 +12,7 @@
         <div class="media-left media-middle">
           <a ui-sref="app.dishdetails({id: promoDish.id})">
             <img class="media-object img-thumbnail"
-            ng-src={{promoDish.image}} alt={{promoDish.name}}>
+            ng-src='{{imgURL + promoDish.image + imgTail}}' alt={{promoDish.name}}>
           </a>
         </div>
         <div class="media-body">
@@ -45,7 +45,7 @@
         </div>
         <div class="media-right media-middle">
           <img class="media-object img-thumbnail"
-          ng-src={{promo.image}} alt={{promo.name}}>
+          ng-src='{{imgURL + promo.image + imgTail}}' alt={{promo.name}}>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
       <div class="media" ng-if="showLeader">
         <div class="media-left media-middle">
           <img class="media-object img-thumbnail"
-          ng-src={{promoLeader.image}} alt={{promoLeader.name}}>
+          ng-src='{{imgURL + promoLeader.image + imgTail}}' alt={{promoLeader.name}}>
         </div>
         <div class="media-body">
           <h2 class="media-heading">{{promoLeader.name}}</h2>

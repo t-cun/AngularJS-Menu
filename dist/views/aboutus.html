@@ -59,7 +59,7 @@
             <li class="media" ng-repeat="leader in leaders">
               <div class="media-left media-middle">
                 <img class="media-object img-thumbnail"
-                ng-src={{leader.image}} alt={{leader.name}}>
+                ng-src='{{imgURL + leader.image + imgTail}}' alt={{leader.name}}>
               </div>
               <div class="media-body">
                 <h2 class="media-heading">{{leader.name}}</h2>
