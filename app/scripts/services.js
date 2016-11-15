@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('confusionApp')
-.constant("baseURL", "https://coursera-angular-js.firebaseio.com/")
-.constant('imgURL', 'https://firebasestorage.googleapis.com/v0/b/coursera-angular-js.appspot.com/o/')
+.constant('baseURL', 'https://spiceshack-4b0b7.firebaseio.com/')
+.constant('imgURL', 'https://firebasestorage.googleapis.com/v0/b/spiceshack-4b0b7.appspot.com/o/')
 .constant('imgTail', '?alt=media')
 .service('menuFactory', ['$resource', 'baseURL', function($resource, baseURL) {
 
