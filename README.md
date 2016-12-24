@@ -1,8 +1,8 @@
 # AngularJS-Menu
-This project was created as part of a AngularJS [course](https://www.coursera.org/learn/angular-js) provided through Coursera. 
-This repository contains code progress over the course of the material provided via video lectures and coding assignments. 
+This project was created as part of a AngularJS [course](https://www.coursera.org/learn/angular-js) provided through Coursera.
+This repository contains code progress over the course of the material provided via video lectures and coding assignments.
 Additonally, the project has been remasked as well as additional features added, including firebase integration. Other tools that have
-used as part of the project include gulp and bower as well as npm.
+used as part of the project include gulp and bower as well as npm. If you would like this project in action, visit [spiceshack.tcun.xyz](http://spiceshack.tcun.xyz) to take a look.
 
 <img height="100" align="left" src="https://s3.amazonaws.com/media-p.slid.es/uploads/hugojosefson/images/86267/angularjs-logo.png">
 
@@ -18,7 +18,10 @@ used as part of the project include gulp and bower as well as npm.
 
 <br/><br/><br/><br/>
 
-My intention is use this project as a resource for current and future students of the course and as an example project for anyone learning AngularJS.
+My intention is use this project as a resource for current and future students of the course and as an example project for anyone learning
+AngularJS. As part of my front-end development study I have also completed the next course in coursera's Full Stack Specialization, and have
+another repository available for the completed project [here](https://github.com/tcunningham07/Ionic-Menu). This course covers hybrid
+mobile-app development using AngularJS and the Ionic Framework.
 
 ## Usage
 
