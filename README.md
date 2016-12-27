@@ -19,9 +19,9 @@ used as part of the project include gulp and bower as well as npm. If you would 
 <br/><br/><br/><br/>
 
 My intention is use this project as a resource for current and future students of the course and as an example project for anyone learning
-AngularJS. As part of my front-end development study I have also completed the next course in coursera's Full Stack Specialization, and have
-another repository available for the completed project [here](https://github.com/tcunningham07/Ionic-Menu). This course covers hybrid
-mobile-app development using AngularJS and the Ionic Framework.
+AngularJS.  Please feel free to send e-mail me with any questions or comments. As part of my front-end development study I have also completed
+the next course in coursera's Full Stack Specialization, and have another repository available for the completed project
+[here](https://github.com/tcunningham07/Ionic-Menu). This course covers hybrid mobile-app development using AngularJS and the Ionic Framework.
 
 ## Usage
 
